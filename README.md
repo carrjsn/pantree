@@ -10,10 +10,16 @@ Find a recipe you like?? Pantree also lets you add to favorites for easy access 
 
 Clone and enjoy!
 
-## API key ##
-
-
 ## Setup ##
+
+### Sign up and get a Spoonacular API key - more info here: https://spoonacular.com/food-api ###
+
+### Create a .env file and add the following key
+```bash
+API_KEY="<YOUR-SPOONACULAR-API-KEY>"
+```
+
+## Initialize ##
 1. `npm install`
 2. `npm run build`
 3. `npm start`
