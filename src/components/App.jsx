@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Search from './components/Search.jsx';
 import Pantry from './components/Pantry.jsx';
 import Favorites from './components/Favorites.jsx';
@@ -146,5 +145,4 @@ class App extends React.Component {
   }
 }
 
-// ReactDOM.render(<h2>Dooooooooo</h2>, document.getElementById('app'));
-ReactDOM.render(<App />, document.getElementById('app'));
+export default App;
