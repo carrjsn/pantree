@@ -135,7 +135,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id='main'>
         <h2>Pantree</h2>
         <Pantry ingredients={this.state.ingredients} addPantryItem={this.addPantryItem.bind(this)}/>
         <Search searchRecipes={this.searchRecipes.bind(this)}/>
