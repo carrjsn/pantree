@@ -10,9 +10,17 @@
 }
 
 /* title */
+
+.header {
+  background-color: rgba(231, 245, 250, 0.829);
+  border-radius: 20px;
+  border: 1px solid lightblue
+}
+
 h2 {
   color: lightblue;
   font-family: 'Courier New', Courier, monospace;
+  padding: 0 30px;
 }
 
 /* ingredient textbox */
@@ -27,14 +35,10 @@ h2 {
 }
 
 /* recipes */
-
 .recipes {
   width: 100%;
 }
 
-.favorites {
-  width: 100%;
-}
 
 .recipe-image {
   float: left;
@@ -60,8 +64,11 @@ h2 {
   margin-bottom: 10px;
 }
 
-
 /* favorites */
+.favorites {
+  width: 100%;
+}
+
 .favorite-recipe {
   padding: 5px;
   height: 82px;

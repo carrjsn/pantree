@@ -136,7 +136,9 @@ class App extends React.Component {
   render() {
     return (
       <div id='main'>
-        <h2>Pantree</h2>
+        <div class='header'>
+          <h2>Pantree</h2>
+        </div>
         <Pantry ingredients={this.state.ingredients} addPantryItem={this.addPantryItem.bind(this)}/>
         <Search searchRecipes={this.searchRecipes.bind(this)}/>
         <RecipeList recipes={this.state.recipes} addFavorite={this.addToFavorites.bind(this)} recipeLink={this.goToRecipePage}/>
