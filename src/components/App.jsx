@@ -1,8 +1,8 @@
 import React from 'react';
-import Search from './components/Search.jsx';
-import Pantry from './components/Pantry.jsx';
-import Favorites from './components/Favorites.jsx';
-import RecipeList from './components/RecipeList.jsx';
+import Search from './Search.jsx';
+import Pantry from './Pantry.jsx';
+import Favorites from './Favorites.jsx';
+import RecipeList from './RecipeList.jsx';
 import axios from 'axios';
 
 class App extends React.Component {
@@ -136,6 +136,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <h2>Pantree</h2>
         <Pantry ingredients={this.state.ingredients} addPantryItem={this.addPantryItem.bind(this)}/>
         <Search searchRecipes={this.searchRecipes.bind(this)}/>
         <RecipeList recipes={this.state.recipes} addFavorite={this.addToFavorites.bind(this)} recipeLink={this.goToRecipePage}/>
