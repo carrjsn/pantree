@@ -1,0 +1,76 @@
+
+/* title */
+h2 {
+  color: lightblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* ingredient textbox */
+#ingredient {
+  margin-right: 5px;
+}
+
+/* pantry */
+.pantry h3 {
+  /* padding: 5px; */
+  /* border: 1px solid rgba(48, 45, 35, 0.815); */
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/* recipes */
+.recipe-image {
+  float: left;
+  border: 1px solid white;
+  margin-right: 7px;
+}
+
+.recipe {
+  padding: 5px;
+  height: 102px;
+  background: rgb(213, 238, 247);
+  margin-bottom: 5px;
+}
+
+.recipe-title {
+  font-weight: bold;
+}
+
+.recipes h3 {
+  padding: 5px;
+  border: 1px solid rgb(143, 214, 238);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+/* favorites */
+.favorite-recipe {
+  padding: 5px;
+  height: 82px;
+  background-color: rgba(233, 131, 148, 0.678);
+  margin-bottom: 5px;
+}
+
+.fav-image {
+  float: left;
+  border: 1px solid white;
+  margin-right: 7px;
+}
+
+.fav-title {
+  font-weight: bold;
+}
+
+.favorites h3 {
+  padding: 5px;
+  border: 1px solid salmon;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.remove-favorite-button {
+  /* float: right; */
+  /* border: 1px double white; */
+  margin-top: 15px;
+}
