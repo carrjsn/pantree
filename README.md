@@ -1,5 +1,5 @@
 # Pantry
-Delicious recipes at your fingertips using ingredients you already have in your kitchen
+Delicious recipes at your fingertips using ingredients in your kitchen
 
 ## Summary ##
 Pantry is for the indecisive homecook who doesn't have time for shopping and wants to make a delicious, original home cooked meal inspired by the incredients they already have available.
