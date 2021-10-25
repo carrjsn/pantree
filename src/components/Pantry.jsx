@@ -35,15 +35,27 @@ class Pantry extends React.Component {
     if (this.props.ingredients.length === 1) {
       ingredientUpdate = <p id='pantrycount'>There is 1 item in your pantry</p>
     }
+
+    let ingredients;
+    if (this.props.ingredients.length) {
+      ingredients =
+      <ul id='ingredients'>
+      {this.props.ingredients.map(item => <PantryItem ingredient={item} />)}
+      </ul>
+    } else {
+      ingredients = null;
+    }
+
     return (
       <div className='pantry'>
-        <h3>Your Pantry</h3>
+        <h3>Add Ingredients</h3>
         {ingredientUpdate}
-        <ul id='ingredients'>
-          {this.props.ingredients.map(item => <PantryItem ingredient={item} />)}
-        </ul>
-        <input id='ingredient' type='text' autocomplete='off' value={this.state.value} onChange={this.changeValue.bind(this)}></input>
-        <button id='add-item' onClick={this.addItem.bind(this)}>Add Ingredients</button>
+        {ingredients}
+        <div className='textbox-container'>
+          <input id='ingredient' type='text' autocomplete='off' value={this.state.value} onChange={this.changeValue.bind(this)}></input>
+
+          <button id='add-item' onClick={this.addItem.bind(this)}> + </button>
+        </div>
       </div>
     )
   }

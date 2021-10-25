@@ -7,31 +7,89 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 25px;
+  height: 300px;
+  /* justify-content: stretch; */
 }
 
 /* title */
 
 .header {
-  background-color: rgba(231, 245, 250, 0.829);
+  background-color: rgba(231, 245, 250, 0.507);
   border-radius: 20px;
-  border: 1px solid lightblue
+  border: 1px solid lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
 }
 
 h2 {
   color: lightblue;
   font-family: 'Courier New', Courier, monospace;
-  padding: 0 30px;
+  font-size: 1.8em;
+  /* padding: 0 30px; */
 }
+
+#ingredients {
+  height: auto;
+}
+
 
 /* ingredient textbox */
 #ingredient {
   margin-right: 5px;
+  height: 100%;
+  align-self: center;
+  width: 40%;
+}
+
+#add-item {
+  height: 3vh;
+  width: 3vh;
+}
+
+.textbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 12px;
 }
 
 /* pantry */
+
+.pantry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70%;
+  margin-bottom: 12px;
+}
+
 .pantry h3 {
   display: inline-block;
   margin-bottom: 0;
+}
+
+/* search */
+.search {
+  min-width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchbutton {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.searchbutton:hover {
+  box-shadow: 1px 2px rgb(238, 237, 237);
+  cursor: pointer;
 }
 
 /* recipes */
