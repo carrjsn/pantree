@@ -141,8 +141,10 @@ class App extends React.Component {
         </div>
         <Pantry ingredients={this.state.ingredients} addPantryItem={this.addPantryItem.bind(this)}/>
         <Search searchRecipes={this.searchRecipes.bind(this)}/>
-        {/* <RecipeList recipes={this.state.recipes} addFavorite={this.addToFavorites.bind(this)} recipeLink={this.goToRecipePage}/> */}
-        {/* <Favorites favorites={this.state.favorites} removeFavorite={this.removeFromFavorites.bind(this)}/> */}
+        <div className='bottom-content'>
+          {/* <RecipeList recipes={this.state.recipes} addFavorite={this.addToFavorites.bind(this)} recipeLink={this.goToRecipePage}/> */}
+          {/* <Favorites favorites={this.state.favorites} removeFavorite={this.removeFromFavorites.bind(this)}/> */}
+        </div>
       </div>
     )
   }

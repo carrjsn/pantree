@@ -39,9 +39,9 @@ class Pantry extends React.Component {
     let ingredients;
     if (this.props.ingredients.length) {
       ingredients =
-      <ul id='ingredients'>
+      <div id='ingredients'>
       {this.props.ingredients.map(item => <PantryItem ingredient={item} />)}
-      </ul>
+      </div>
     } else {
       ingredients = null;
     }
@@ -52,7 +52,7 @@ class Pantry extends React.Component {
         {ingredientUpdate}
         {ingredients}
         <div className='textbox-container'>
-          <input id='ingredient' type='text' autocomplete='off' value={this.state.value} onChange={this.changeValue.bind(this)}></input>
+          <input id='ingredient-txtbox' type='text' autocomplete='off' placeholder='enter ingredient' value={this.state.value} onChange={this.changeValue.bind(this)}></input>
 
           <button id='add-item' onClick={this.addItem.bind(this)}> + </button>
         </div>
