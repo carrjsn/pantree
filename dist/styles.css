@@ -67,30 +67,57 @@ h2 {
 /* favorites */
 .favorites {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .favorite-recipe {
   padding: 5px;
-  height: 82px;
-  background-color: rgba(233, 131, 148, 0.678);
+  min-height: 10vh;
+  background-color: rgba(255, 232, 236, 0.678);
   margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
 }
 
 .fav-image {
-  float: left;
+  /* float: left; */
   border: 1px solid white;
-  margin-right: 7px;
+  margin-right: 8px;
+  height: 12vh;
+  object-fit: cover;
 }
 
 .fav-title {
   font-weight: bold;
+  font-size: 1.5em;
+}
+
+.fav-link {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: black;
+}
+
+.fav-link {
+  text-decoration: none;
 }
 
 .favorites h3 {
-  padding: 5px;
-  border: 1px solid salmon;
+  padding: 10px;
+  /* border: 1px solid salmon; */
   display: inline-block;
   margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: salmon;
+  color: white;
+  width: 25%;
+  height: auto;
+  text-align: center;
+  font-weight: normal;
+  align-self: center;
 }
 
 .remove-favorite-button {
