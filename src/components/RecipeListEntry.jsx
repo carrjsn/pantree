@@ -2,7 +2,7 @@ import React from 'react';
 
 const RecipeListEntry = (props) => (
   <div className='recipe'>
-    <img className='recipe-image' src={props.recipe.image} width='100' height='100' />
+    <img className='recipe-image' src={props.recipe.image} />
     <span className='recipe-title'>{props.recipe.title}</span>
     <div className='missed-ingredients'>Ingredients missing: {props.recipe.missedIngredientCount}</div>
     <div className='likes'>Likes: {props.recipe.likes}</div>

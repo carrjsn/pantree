@@ -14,6 +14,11 @@
   /* justify-content: stretch; */
 }
 
+.bottom-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
 
 /* title */
 
@@ -136,12 +141,15 @@ h2 {
   float: left;
   border: 1px solid white;
   margin-right: 7px;
+  height: 90%;
+  min-width: 100px;
+  object-fit: cover;
 }
 
 .recipe {
-  padding: 5px;
-  height: 102px;
-  background: rgb(213, 238, 247);
+  padding: 10px;
+  height: 10vh;
+  background: rgb(247, 253, 255);
   margin-bottom: 5px;
 }
 
