@@ -4,7 +4,7 @@ const RecipeListEntry = (props) => (
   <div className='recipe'>
     <img className='recipe-image' src={props.recipe.image} />
     <div className='recipe-info'>
-      <span className='recipe-title'>{props.recipe.title}</span>
+      <div className='recipe-title'>{props.recipe.title}</div>
       <div className='missed-ingredients'>Ingredients missing: {props.recipe.missedIngredientCount}</div>
       <div className='likes'>Likes: {props.recipe.likes}</div>
       <div><a className='recipe-link' href='#' onClick={() => props.recipeLink(props.recipe.id)}>Get Recipe</a></div>
