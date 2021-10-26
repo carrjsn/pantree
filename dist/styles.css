@@ -1,6 +1,6 @@
 
 #app {
-  width: 80%;
+  width: 90%;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,7 +15,7 @@
 }
 
 .bottom-content {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 }
@@ -143,14 +143,25 @@ h2 {
   margin-right: 7px;
   height: 90%;
   min-width: 100px;
+  max-width: 40%;
   object-fit: cover;
+}
+
+.recipe-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 90%;
 }
 
 .recipe {
   padding: 10px;
-  height: 10vh;
+  /* height: 10vh; */
   background: rgb(247, 253, 255);
   margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .recipe-title {
@@ -159,9 +170,9 @@ h2 {
 
 .recipes h3 {
   padding: 5px;
-  border: 1px solid rgb(143, 214, 238);
+  /* border: 1px solid rgb(143, 214, 238); */
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 /* favorites */

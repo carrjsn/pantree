@@ -3,18 +3,20 @@ import React from 'react';
 const RecipeListEntry = (props) => (
   <div className='recipe'>
     <img className='recipe-image' src={props.recipe.image} />
-    <span className='recipe-title'>{props.recipe.title}</span>
-    <div className='missed-ingredients'>Ingredients missing: {props.recipe.missedIngredientCount}</div>
-    <div className='likes'>Likes: {props.recipe.likes}</div>
-    <div><a className='recipe-link' href='#' onClick={() => props.recipeLink(props.recipe.id)}>Get Recipe</a></div>
-    <div className='favorite-button'>
-      <input name='add-favorite' type='checkbox' onClick={() => props.addFavorite({
-        title: props.recipe.title,
-        image: props.recipe.image,
-        id: props.recipe.id
-        })}>
-      </input>
-      <label for='add-favorite'>Add to favorites</label>
+    <div className='recipe-info'>
+      <span className='recipe-title'>{props.recipe.title}</span>
+      <div className='missed-ingredients'>Ingredients missing: {props.recipe.missedIngredientCount}</div>
+      <div className='likes'>Likes: {props.recipe.likes}</div>
+      <div><a className='recipe-link' href='#' onClick={() => props.recipeLink(props.recipe.id)}>Get Recipe</a></div>
+      <div className='favorite-button'>
+        <input name='add-favorite' type='checkbox' onClick={() => props.addFavorite({
+          title: props.recipe.title,
+          image: props.recipe.image,
+          id: props.recipe.id
+          })}>
+        </input>
+        <label for='add-favorite'>Add to favorites</label>
+      </div>
     </div>
   </div>
 )
